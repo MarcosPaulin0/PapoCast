@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="titulo">
+    <h2>Detalhe PapoCast</h2>
+  </div>
+  <div class="link" *ngIf="retornaLancamentos ==false">
+    <a routerLink="" (click)="voltarLancamentos">
+      <mat-icon id="arrow">arrow_left</mat-icon>
+      <p>voltar ultimos lançamentos</p>
+    </a>
+    <div *ngIf="!retornaLancamentos">
+      <app-lancamentos></app-lancamentos>
+    </div>
+  </div>
+  <div class="dataCenter">
+    <mat-card>
+      <div class="imgCard">
+        <img matCardImage src="/assets/img/pythonCard.png">
+      </div>
+
+      <h2>Python: Por onde começar?</h2>
+
+      <div class="conteudo">
+        <mat-card-content>
+          <h3>Descrição:</h3>
+          <p>Uma introdução ao conhecimento e cotidiano dessa linguagem, com aprofundamento
+             do básico ao avançado,
+            trazendo a visão prática da utilização da linguagem de
+            forma simples e dinâmica .</p>
+        </mat-card-content>
+      </div>
+
+      <div class="rodape">
+        <mat-card-footer>
+          <p id="nome">Papocast</p>
+          <p>25 Fev 21 º 4:27</p>
+        </mat-card-footer>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@400;700&display=swap');
+
+button{
+  cursor: pointer;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3. 1fr);
+  margin: 0 auto;
+  grid-template-areas:
+  'cabecalho cabecalho cabecalho',
+  'corpo corpo corpo',
+  ;
+  background-color: #ffff;
+}
+/* ------ Header --------- */
+.topo{
+  width: 100%;
+  height: 100px;
+  background-color:#167A9A ;
+
+}.cabecalho{
+  grid-area: cabecalho;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  'logo search user'
+  ;
+  margin: 20px;
+}
+.logo{
+  grid-area: logo;
+}
+.logo img{
+  height: 50px;
+  padding-top: 10px;
+}
+.search{
+  grid-area: search;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.search button{
+  background: none;
+  border: none;
+  margin-right: -26px;
+}
+.search input{
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+  background: none;
+  width: 280px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF ;
+  padding-left: 30px;
+}
+.search input::placeholder{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF ;
+  padding-left: 30px;
+  margin: 6px;
+}
+.user{
+  grid-area: user;
+  padding-left: 330px;
+  padding-top: 10px;
+}
+.user a{
+  text-decoration: none;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+.user ul {
+  list-style-type: none;
+  padding: 0;
+}
+#usuario{
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.user ul li {
+  display: inline;
+  position: relative;
+}
+.user ul li a {
+  color: var(gray);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+/* --- sub menu --- */
+.user ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+.user ul li:hover ul {
+  display: block;
+}
+.user ul ul {
+  width: 150px;
+}
+.user ul ul li a {
+  display: block;
+  color: #494D4B;
+}
+
+/* -------------------- */
+.corpo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  'episodios rotas'
+  ;
+  margin-bottom: 0;
+  width: 100%;
+}
+.episodios{
+  grid-area: episodios;
+  width: 860px;
+}
+.rotas{
+  grid-area: rotas;
+  width: 504px;
+}
+.tabela_eps{
+  padding: 11px 2px 10px 20px;
+  width: 778px;
+  margin-right: 10px;
+  height: 440px;
+}
+th{
+  border-bottom: 1px solid #E6E8EB;
+}
+td{
+  border-bottom: 1px solid #E6E8EB;
+}
+.titulo{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #494D4B;
+  margin: 40px 0 10px 20px;
+  width: 200px;
+}
+.titulo_tabela{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #AFB3B1;
+  padding-top: 10px;
+  height: 40px;
+  border-bottom: 1px solid #E6E8EB;
+}
+.titulo_conteudo{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #494D4B;
+}
+.titulo_img{
+  margin-right: 0;
+  width: 36px;
+}
+#papocast{
+  padding-left: 10px;
+}
+.conteudo{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+  padding-left: 20px;
+  border-bottom: 1px solid #E6E8EB;
+}
+.player{
+  background: #F7F8FA;
+  border: 1px solid #E6E8EB;
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+}
+#divisoria{
+  border: 1px solid #494D4B;
+  transform: rotate(90.18deg);
+  width: 485px;
+  float: left;
+  left: 594px;
+  bottom: 252px;
+  position: relative;
+}
+img{
+  max-width: 100%;
+}

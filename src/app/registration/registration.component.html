@@ -1,0 +1,39 @@
+<section class="container">
+  <form action="" class="registration">
+    <h2 class="registration__title">Faça seu cadastro</h2>
+
+    <div class="form-field">
+      <input class="form-field__input" id="email" type="text"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+       name="email" placeholder="E-mail" required [(ngModel)]="email"/>
+    </div>
+    <div class="campos">
+      <input ng-show class="form-field__input" [type]="hide ? 'password':'text'" minlength="4" maxlength="8" size="10"
+         placeholder="Senha" required [(ngModel)]="password" >
+
+      <span class="material-icons" matSuffix (click) ="hide = !hide">
+          {{hide ? 'visibility':'visibility_off'}}
+          </span>
+    </div>
+
+    <div class="agree">
+      <input type="checkbox" id="terms" name="terms" required (click)="aceitar()" [(ngModel)]="aceite">
+      <label for="terms">Eu concordo com os <a routerLink="/terms" id="termo">
+        Termos e Condições de Uso do PapoCast</a>
+      </label>
+    </div><br>
+
+    <div class="button-wrapper">
+      <button class="button" type="submit" (click) = "cadastrar()">Cadastre-se</button>
+    </div>
+    <hr>
+    <div class="goLogin">
+      <a routerLink="/login" class="loginrouter" >
+        <p><img src="/assets/img/↳Color_1.png">
+          Faça Login</p>
+      </a>
+
+    </div>
+  </form>
+</section>
+<app-background></app-background>

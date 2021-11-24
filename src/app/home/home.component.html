@@ -1,0 +1,144 @@
+<div class="container">
+  <header class="topo">
+
+    <div class="cabecalho">
+      <div class="logo">
+        <a routerLink='/home'><img src="/assets/img/logo.png"></a>
+      </div>
+
+      <div class="search">
+        <button><img src="/assets/img/lupa.png"></button>
+        <input type="text" placeholder="Busque aqui">
+      </div>
+
+      <div class="user">
+        <ul id="usuario">
+          <li><a><img src="/assets/img/userr_1.png"> Marcos</a>
+            <ul>
+              <li><a routerLink= '/profile'>Meu Perfil</a></li>
+              <li><a routerLink= '../login'>Sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="corpo">
+    <div class="episodios">
+      <caption class="titulo">Todos os episódios</caption>
+
+      <table class="tabela_eps">
+        <thead>
+          <tr class="titulo_tabela">
+            <th id="papocast">Papocast</th>
+            <th></th>
+            <th>Apresentado</th>
+            <th>Data</th>
+            <th>Duração</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="titulo_img"><img src="assets/img/datacenter.png"></td>
+            <td class="titulo_conteudo">O ramo do Data Center no Brasil</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">16 Jan 21</td>
+            <td class="conteudo">24:26</td>
+            <td>
+              <a routerLink='dataCenter'>
+                <button class="player" (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png">
+              </button>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titulo_img"><img src="/assets/img/dotnet.png"></td>
+            <td class="titulo_conteudo">Um bate papo sobre .NET</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">20 Fev 21</td>
+            <td class="conteudo">35:40</td>
+            <td>
+              <a routerLink='dotNet'>
+                <button class="player" (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png"></button>
+              </a>
+          </tr>
+
+          <tr>
+            <td class="titulo_img"><img src="/assets/img/python.png"></td>
+            <td class="titulo_conteudo">Python : Por onde começar?</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">25 Fev 21</td>
+            <td class="conteudo">4:27</td>
+            <td>
+              <a routerLink='python'>
+                <button class="player" (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png"></button>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titulo_img"><img src="/assets/img/css.png"></td>
+            <td class="titulo_conteudo">Vale a pena aprender CSS?</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">8 Mar 21</td>
+            <td class="conteudo">1:27:11</td>
+            <td>
+              <a routerLink='css'>
+                <button class="player"  (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png"></button>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="titulo_img"><img src="/assets/img/html.png"></td>
+            <td class="titulo_conteudo">Entenda o que é HTML</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">25 Mar 21</td>
+            <td class="conteudo">1:35:18</td>
+            <td>
+              <a routerLink='html'>
+                <button class="player" (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png"></button>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td  class="titulo_img"><img src="/assets/img/rest.png"></td>
+            <td class="titulo_conteudo">Um bate papo sobre REST e RESTful</td>
+            <td class="conteudo">PapoCast</td>
+            <td class="conteudo">6 Abr 21</td>
+            <td class="conteudo">1:20:18</td>
+            <td>
+              <a routerLink='rest' routerLinkActive="is-active">
+                <button class="player" (click)="mostrarCard()">
+                <img src="/assets/img/Vector.png"></button>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr id="divisoria">
+    </div>
+
+     <div class="rotas">
+      <div *ngIf="showComponent == true; ">
+        <router-outlet></router-outlet>
+      </div>
+      <div *ngIf="!showComponent">
+        <app-lancamentos></app-lancamentos>
+      </div>
+    </div>
+  </div>
+
+</div>
+

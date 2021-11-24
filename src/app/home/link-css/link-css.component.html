@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="titulo">
+    <h2>Detalhe PapoCast</h2>
+  </div>
+  <div class="link" *ngIf="retornaLancamentos ==false">
+    <a routerLink="" (click)="voltarLancamentos">
+      <mat-icon id="arrow">arrow_left</mat-icon>
+      <p>voltar ultimos lançamentos</p>
+    </a>
+    <div *ngIf="!retornaLancamentos">
+      <app-lancamentos></app-lancamentos>
+    </div>
+  </div>
+  <div class="dataCenter">
+    <mat-card>
+      <div class="imgCard">
+        <img matCardImage src="/assets/img/cssCard.png">
+      </div>
+
+      <h2>Vale a pena aprender CSS?</h2>
+
+      <div class="conteudo">
+        <mat-card-content>
+          <h3>Descrição:</h3>
+          <p>Há mil formas de te convencer que ainda vale muito a pena aprender CSS.
+             Não é só porque hoje existem
+            frameworks e bibliotecas que devemos ignorar o CSS. É preciso entender os
+             conceitos dessa linguagem de estilo.</p>
+        </mat-card-content>
+      </div>
+
+      <div class="rodape">
+        <mat-card-footer>
+          <p id="nome">Papocast</p>
+          <p>8 Mar 21 º 1:27:11</p>
+        </mat-card-footer>
+      </div>
+    </mat-card>
+  </div>
+</div>

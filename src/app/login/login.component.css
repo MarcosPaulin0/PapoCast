@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+
+
+
+.container{
+  display: grid;
+  position:static;
+  grid-template-columns: 600px repeat(2,1fr );
+  grid-template-rows: 100%;
+  grid-template-areas:
+  'login img__login'
+  ;
+  width: 100%;
+
+}
+.login{
+  grid-area: login;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  height: 400px;
+  width: 390px;
+  position: relative;
+  margin-left: 78px;
+  margin-top: 60px;
+
+}
+.login__title{
+  width: 120px;
+  height: 38px;
+  margin-top: 70px;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  margin-left: 126px;
+
+}
+.login__title h2{
+  font-size: 26px;
+  line-height: 31px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  color: #494D4B;
+}
+
+.form-field{
+  display:block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  height: 120px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.campos{
+  width: 340;
+  margin-bottom: -18px;
+}
+.campos-1{
+  height: 32px;
+}
+.form-field__input{
+  width: 330px;
+  height: 37px;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-top: 4px;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  color: #494D4B;
+}
+.campos-1 {
+  margin-top: 46px;
+}
+.material-icons{
+  position: absolute;
+  color: #494D4B;
+  margin: 6px 20px 2px -32px;
+}
+.material-icons:hover{
+  cursor: pointer;
+}
+.button-wrapper{
+    display: flex;
+    position: relative;
+    margin-left: 114px;
+    width: 170px;
+}
+.button{
+  width: 160px;
+  height: 36px;
+  background: #167A9A;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+hr{
+  border: 1px solid #E5E5E5;
+  margin-left: 14px;
+  width: 360px;
+  margin-top: 30px;
+}
+a{
+  text-decoration: none;
+}
+.cadastro{
+  display: relative;
+  margin-left: 230px;
+  margin-right: 10px;
+  padding-top: 14px;
+  width: 150px;
+  height: 30px;
+}
+.cadastro p{
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #494D4B;
+  padding-right: 20px;
+  float: right;
+}
+#arrow{
+  display:flex;
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 126px;
+  float: right;
+  color:#494D4B
+}
+a:hover, button:hover{
+  cursor: pointer;
+}
+.img__login{
+  grid-area: img__login;
+  padding-top: 50px;
+  padding-right: 50px;
+}

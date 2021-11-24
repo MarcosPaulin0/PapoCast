@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="titulo">
+    <h2>Detalhe PapoCast</h2>
+  </div>
+  <div class="link" *ngIf="retornaLancamentos ==false">
+    <a routerLink="" (click)="voltarLancamentos">
+      <mat-icon id="arrow">arrow_left</mat-icon>
+      <p>voltar ultimos lançamentos</p>
+    </a>
+    <div *ngIf="!retornaLancamentos">
+      <app-lancamentos></app-lancamentos>
+    </div>
+  </div>
+  <div class="dataCenter">
+    <mat-card>
+      <div class="imgCard">
+        <img matCardImage src="/assets/img/dotNetCard.png">
+      </div>
+
+      <h2>Um bate papo sobre .NET</h2>
+
+      <div class="conteudo">
+        <mat-card-content>
+          <h3>Descrição:</h3>
+          <p>Os conceitos introdutórios do .NET, um framework da Microsoft para o
+            desenvolvimento e execução de aplicações, suas características e funcionamento,
+            com visão prática de suas utilização.</p>
+        </mat-card-content>
+      </div>
+
+      <div class="rodape">
+        <mat-card-footer>
+          <p id="nome">Papocast</p>
+          <p>20 Fev 21 º 35:40</p>
+        </mat-card-footer>
+      </div>
+    </mat-card>
+  </div>
+</div>

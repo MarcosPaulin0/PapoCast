@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="titulo">
+    <h2>Detalhe PapoCast</h2>
+  </div>
+  <div class="link" *ngIf="retornaLancamentos ==false">
+    <a routerLink="" (click)="voltarLancamentos">
+      <mat-icon id="arrow">arrow_left</mat-icon>
+      <p>voltar ultimos lançamentos</p>
+    </a>
+    <div *ngIf="!retornaLancamentos">
+      <app-lancamentos></app-lancamentos>
+    </div>
+  </div>
+
+  <div class="dataCenter">
+    <mat-card >
+      <div class="imgCard">
+        <img matCardImage src="/assets/img/dataCenterCard.png">
+      </div>
+
+      <h2>O ramo de Data Center no Brasil</h2>
+
+      <div class="conteudo">
+        <mat-card-content>
+          <h3>Descrição:</h3>
+          <p>A transformação digital é um dos motores da economia da América Latina e do Brasil.
+            Estudo do IDC Latin America
+            publicado em 2020 indica que, até 2022, 40% do PIB da América Latina virá de negócios digitais </p>
+        </mat-card-content>
+      </div>
+
+      <div class="rodape">
+        <mat-card-footer>
+          <p id="nome">Papocast</p>
+          <p>16 Jan 21 º 24:26</p>
+        </mat-card-footer>
+      </div>
+    </mat-card>
+  </div>
+</div>
+

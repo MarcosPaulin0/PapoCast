@@ -1,0 +1,53 @@
+<div class="container">
+  <form action="" class="profile">
+
+    <h2>Complete seu Cadastro</h2>
+
+    <div class="nome">
+     <label for="nome">Nome: </label>
+     <input type="text" minlength="8" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="email">
+      <label for="email">E-mail alternativo: </label>
+      <input type="text" minlength="8" placeholder="Opcional">
+    </div>
+
+    <div class="tel">
+     <label for="telefone">Tel: </label>
+     <input type="tel" placeholder="Opcional">
+    </div>
+
+    <div class="genero">
+      <input type="radio" id="masculino" name="botao">
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" id="feminino" name="botao">
+      <label for="feminino">Feminino </label>
+
+      <input type="radio" id="neutro"  name="botao">
+      <label for="neutro">Não Declarar</label>
+    </div>
+
+    <div class="estado">
+     <label for="estado">Estado: </label>
+     <select name="estado" id="">
+       <option value=""></option>
+       <option value="">Acre</option>
+       <option value="">Bahia</option>
+       <option value="">Ceará</option>
+       <option value="">Minas Gerais</option>
+       <option value="">Rio de Janeiro</option>
+       <option value="">São Paulo</option>
+     </select>
+    </div>
+
+    <div class="retornar">
+      <a routerLink="/home">Voltar a página inicial</a>
+    </div>
+
+    <div class="botao_cadastro">
+      <button id="btn_cadatrar" (click)="salvar()">Cadastrar</button>
+    </div>
+  </form>
+</div>

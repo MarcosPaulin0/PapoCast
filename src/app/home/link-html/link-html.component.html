@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="titulo">
+    <h2>Detalhe PapoCast</h2>
+  </div>
+  <div class="link" *ngIf="retornaLancamentos ==false">
+    <a routerLink="" (click)="voltarLancamentos">
+      <mat-icon id="arrow">arrow_left</mat-icon>
+      <p>voltar ultimos lançamentos</p>
+    </a>
+    <div *ngIf="!retornaLancamentos">
+      <app-lancamentos></app-lancamentos>
+    </div>
+  </div>
+  <div class="dataCenter">
+    <mat-card>
+      <div class="imgCard">
+        <img matCardImage src="/assets/img/htmlCard.png">
+      </div>
+
+      <h2>Entenda o que é HTML</h2>
+
+      <div class="conteudo">
+        <mat-card-content>
+          <h3>Descrição:</h3>
+          <p>Antes de tudo o HTML é a sigla para Hyper Text Markup Language. Ele permite
+            inserir o conteúdo e
+            estabelecer a estrutura básica de um website. Entendendo ele, você será capaz
+            de compreender as outras tecnologias.</p>
+        </mat-card-content>
+      </div>
+
+      <div class="rodape">
+        <mat-card-footer>
+          <p id="nome">Papocast</p>
+          <p>25 Mar 21 º 1:35:18</p>
+        </mat-card-footer>
+      </div>
+    </mat-card>
+  </div>
+</div>

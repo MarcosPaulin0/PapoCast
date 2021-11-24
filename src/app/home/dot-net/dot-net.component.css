@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@400;700&display=swap');
+
+.container{
+  margin-bottom: 0;
+  width: 100%;
+  background: #FFFFFF;
+}
+.titulo{
+  width: 180px;
+  height: 28px;
+  margin-top: 40px;
+  margin-left: 160px;
+}
+.titulo h2{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.link{
+  width: 200px;
+  margin-top: 20px;
+  height: 30px;
+  margin-top: 28px;
+}
+#arrow{
+  display: flex;
+  margin-top: 2px;
+}
+.link a{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ABA8B3;
+  text-decoration: none;
+}
+.link p{
+  display: flex;
+  padding-left: 20px;
+  margin-top: -20px;
+  width: 200px;
+}
+
+/* ---- Card ------ */
+
+.dataCenter{
+  width: 440px;
+  padding-top: 2px;
+}
+.dataCenter mat-card{
+  height: 388px;
+  margin-bottom: 0;
+  border: 1px solid #E6E8EB;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+.imgCard{
+  padding: 20px 18px 0 18px;
+  height: 160px;
+}
+.imgCard img{
+  height: 150px;
+  width: 400px;
+  border-radius: 16px;
+}
+h2{
+  display:block;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #494D4B;
+  margin-top: -10px;
+  margin-left: 4px;
+  height: 20px;
+}
+.conteudo{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  color: #808080;
+  width: 400px;
+}
+.conteudo h3{
+  margin-top: -10px;
+}
+.conteudo p{
+  margin-top: -10px;
+}
+.rodape{
+  float: right;
+  margin-right: 20px;
+  margin-top: -50px;
+}
+.rodape p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+  margin-top: -10px;
+}
+#nome{
+  padding-left: 52px;
+}

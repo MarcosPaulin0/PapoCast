@@ -1,0 +1,44 @@
+
+
+
+<div class="container" >
+  <form action="" class="login">
+
+    <div class="login__title"><h2 >Faça Login</h2></div>
+
+    <div class="form-field">
+      <div class="campos">
+        <input class="form-field__input" id="email" type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        [(ngModel)]="email" name="email" placeholder="E-mail" required/>
+      </div>
+      <div class="campos-1">
+        <input ng-show class="form-field__input" id="eye" [type]="hide ? 'password':'text'"
+        minlength="4" maxlength="8" size="10"
+         placeholder="Senha" required [(ngModel)]= "password" name="password">
+
+        <span class="material-icons" matSuffix (click) ="hide = !hide">
+          {{hide ? 'visibility':'visibility_off'}}
+          </span>
+      </div>
+    </div>
+
+    <div class="button-wrapper">
+      <button type="submit"class="button" (click)="entrar()" >Entrar</button>
+    </div>
+
+    <hr>
+
+    <div class="cadastro">
+      <a routerLink="/registration" ><p>Faça seu cadastro</p> </a>
+      <mat-icon id="arrow">arrow_right</mat-icon>
+    </div>
+
+  </form>
+
+  <div class="img__login">
+    <img src="/assets/img/imagem.png" alt="">
+  </div>
+</div>
+
+<app-background></app-background>
